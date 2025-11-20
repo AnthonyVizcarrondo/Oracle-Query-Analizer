@@ -42,7 +42,7 @@ pip install -r requirements.txt
 Asegúrate de tener el entorno virtual activado.
 Ejecuta la aplicación con Streamlit:
 
-streamlit run app.py
+streamlit run oracle_query_analizer.py
 
 Se abrirá automáticamente una pestaña en tu navegador (usualmente en http://localhost:8501).
 
