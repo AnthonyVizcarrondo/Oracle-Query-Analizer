@@ -38,7 +38,7 @@ Instala las librerías necesarias (streamlit, oracledb, pandas, sqlparse) ejecut
 pip install -r requirements.txt
 (Si no tienes el archivo requirements.txt, puedes instalar manualmente con: pip install streamlit oracledb pandas sqlparse)
 
-🛠️ Uso
+## 🛠️ Uso
 Asegúrate de tener el entorno virtual activado.
 Ejecuta la aplicación con Streamlit:
 
@@ -49,7 +49,8 @@ Se abrirá automáticamente una pestaña en tu navegador (usualmente en http://l
 En la barra lateral, ingresa las credenciales de tu base de datos Oracle.
 Escribe tu consulta en el área de texto y presiona "Validar y Analizar".
 
-🛡️ Qué detecta esta herramienta
+## 🛡️ Qué detecta esta herramienta
+
 Reglas Estáticas (Sintaxis)
 
 ⛔ SELECT *: Uso ineficiente de I/O.
@@ -65,9 +66,11 @@ Reglas Dinámicas (Explain Plan)
 
 ⚠️ INDEX SKIP SCAN: Uso subóptimo de índices compuestos.
 
-📝 Notas sobre Oracle
+## 📝 Notas sobre Oracle
+
 Librería: Este proyecto usa python-oracledb en modo "Thin", por lo que no necesitas instalar el Oracle Instant Client en la mayoría de los casos.
 PLAN_TABLE: La aplicación genera un STATEMENT_ID único (UUID) para cada análisis, inserta el plan, lo lee y luego lo borra para mantener la tabla limpia.
 
-📄 Licencia
+## 📄 Licencia
+
 Este proyecto está bajo la licencia MIT.
